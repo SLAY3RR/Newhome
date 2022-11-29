@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="Style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">  LOGO</a>
+         
+          <div class=" my-2 my-lg-0">
+            <ul class="navbar-nav   mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Login</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Banner_20.png" alt="Los Angeles" >
+                  
+              </div>
+              <div class="carousel-item">
+                <img src="Images/B_F_1512x.png" alt="Chicago" >
+                
+              </div>
+              <div class="carousel-item">
+                <img src="Images/banner.png" alt="New York" >
+                 
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          
+          
+    </div>
+
+    <div class="container mt-5 ">
+        <h1>Catagories</h1>
+         <section class="customer-logos slider mt-3">
+           <div class="slide"><img src="Images/1.png"></div>
+           <div class="slide"><img src="Images/2.png"></div>
+           <div class="slide"><img src="Images/3.png"></div>
+           <div class="slide"><img src="Images/4.png"></div>
+           <div class="slide"><img src="Images/6.png"></div>
+           <div class="slide"><img src="Images/7.png"></div>
+           <div class="slide"><img src="Images/8.png"></div>
+         </section>
+         <h1 class="mt-5">More Catagories</h1>
+         <section class="customer-logos slider mt-3">
+            <div class="slide"><img src="Images/9.png"></div>
+            <div class="slide"><img src="Images/10.png"></div>
+            <div class="slide"><img src="Images/11.png"></div>
+            <div class="slide"><img src="Images/12.png"></div>
+            <div class="slide"><img src="Images/13.png"></div>
+            <div class="slide"><img src="Images/14.png"></div>
+            <div class="slide"><img src="Images/16.png"></div>
+          </section>
+      </div>
+      <footer class="text-center bg-dark mt-5">
+        <p class="text-light p-2">COPYRIGHT © 2022 .. ALL RIGHTS RESERVED.</p>
+      </footer>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
